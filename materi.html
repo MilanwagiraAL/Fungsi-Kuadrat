@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi - MathKuadrat.id</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] } };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">MathKuadrat.id</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="materi.html">Materi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rumus.html">Rumus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="soal.html">Latihan Soal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="referensi.html">Referensi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <section id="materi" class="mb-5">
+            <h1 class="text-center fw-bold mb-5 display-5">MATERI FUNGSI KUADRAT</h1>
+            <div class="card p-4">
+                <h3>1. Pengertian dan Bentuk Umum</h3>
+                <p>Fungsi kuadrat adalah fungsi polinom (suku banyak) di mana pangkat tertinggi dari variabel bebasnya adalah dua. Bentuk umum dari fungsi kuadrat dalam variabel $x$ adalah:</p>
+                <div class="text-center my-3 p-3 bg-light rounded border border-secondary-subtle"><h4>$$f(x) = ax^2 + bx + c$$</h4></div>
+                <ul>
+                    <li>$x$ adalah variabel bebas.</li>
+                    <li>$a, b,$ dan $c$ adalah bilangan real (konstanta).</li>
+                    <li><strong>Syarat mutlak:</strong> $a \neq 0$. Jika $a = 0$, maka fungsi akan berubah menjadi fungsi linear.</li>
+                </ul>
+            </div>
+            <div class="card p-4">
+                <h3>2. Pembuat Nol Fungsi (Akar-Akar Fungsi Kuadrat)</h3>
+                <p>Pembuat nol fungsi adalah nilai $x$ yang menyebabkan nilai fungsi sama dengan nol, yaitu $f(x) = 0$ atau $ax^2 + bx + c = 0$. Nilai ini dicari melalui 3 metode utama: Faktorisasi, Melengkapkan Kuadrat Sempurna, dan Rumus ABC:</p>
+                <div class="text-center my-3 p-3 bg-light rounded border border-secondary-subtle"><h4>$$x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$</h4></div>
+            </div>
+            <div class="card p-4">
+                <h3>3. Nilai Diskriminan ($D$) dan Karakteristik Sifat</h3>
+                <p>Hubungan analitis ditentukan oleh nilai Diskriminan: $$D = b^2 - 4ac$$</p>
+                <ul>
+                    <li><strong>$D > 0$</strong>: Fungsi memiliki dua pembuat nol real yang berbeda ($x_1 \neq x_2$).</li>
+                    <li><strong>$D = 0$</strong>: Fungsi memiliki satu pembuat nol real / akar kembar ($x_1 = x_2$).</li>
+                    <li><strong>$D < 0$</strong>: Fungsi tidak memiliki pembuat nol real (akar imajiner).</li>
+                </ul>
+            </div>
+            <div class="card p-4">
+                <h3>4. Titik Ekstrem dan Sumbu Simetri</h3>
+                <p><strong>Sumbu Simetri ($x_p$):</strong> Garis vertikal pembelah fungsi seimbang. $$x_p = -\frac{b}{2a}$$</p>
+                <p><strong>Nilai Ekstrem ($y_p$):</strong> Nilai output tertinggi atau terendah. Jika $a > 0$ berupa nilai minimum, jika $a < 0$ berupa nilai maksimum. $$y_p = -\frac{D}{4a} \quad \text{atau} \quad y_p = f(x_p)$$</p>
+                <p><strong>Koordinat Titik Puncak:</strong> $$\text{Titik Puncak} = \left(-\frac{b}{2a}, -\frac{D}{4a}\right)$$</p>
+            </div>
+            <div class="card p-4">
+                <h3>5. Definit Positif dan Definit Negatif</h3>
+                <ul>
+                    <li><strong>Definit Positif</strong> ($f(x) > 0$ untuk setiap $x$ real): Syarat $a > 0$ dan $D < 0$.</li>
+                    <li><strong>Definit Negatif</strong> ($f(x) < 0$ untuk setiap $x$ real): Syarat $a < 0$ dan $D < 0$.</li>
+                </ul>
+            </div>
+            <div class="card p-4">
+                <h3>6. Teknik Menyusun Rumus Fungsi Kuadrat</h3>
+                <p><strong>Kondisi 1:</strong> Diketahui titik potong sumbu X di $(x_1, 0)$ dan $(x_2, 0)$ &rarr; $$f(x) = a(x - x_1)(x - x_2)$$</p>
+                <p><strong>Kondisi 2:</strong> Diketahui titik puncak $(x_p, y_p)$ &rarr; $$f(x) = a(x - x_p)^2 + y_p$$</p>
+                <p><strong>Kondisi 3:</strong> Melalui tiga titik sembarang &rarr; Gunakan eliminasi/substitusi bentuk umum SPLDV.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="motivation-footer">
+        <div class="container">
+            <div class="motivation-quote">"BISMILLAH, Coba dulu ajh dulu YEOREOBUN, Kalau ga coba ga bakalan tau nanti gimana hasilnya"</div>
+            <div class="motivation-author">- Karmila</div>
+            <div class="site-info">&copy; 2026 MathKuadrat.id | Sistem Informasi | Fakultas Teknik | Universitas Musamus Merauke</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            if (window.history.replaceState) window.history.replaceState(null, null, window.location.pathname);
+            window.scrollTo(0, 0);
+        });
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    </script>
+</body>
+</html>
